@@ -48,7 +48,7 @@ function App() {
               <About mode={mode} />
             </Route>
             <Route path="/">
-              <TextForm showAlert={showAlert} heading="Enter the text ot analyze below" mode={mode} />
+              <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />
             </Route>
           </Switch>
         </div>

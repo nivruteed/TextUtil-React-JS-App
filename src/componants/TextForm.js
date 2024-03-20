@@ -50,9 +50,9 @@ export default function TextForm(props) {
                 </div>
                 <button disabled = {text.length ===0}className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to UpperCase</button>
                 <button disabled = {text.length ===0}className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>Convert to LowerCase</button>
-                <button disabled = {text.length ===0}className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>Clear text</button>
-                <button disabled = {text.length ===0}className="btn btn-primary mx-1 my-1" onClick={handleCopyClick}>Copy text</button>
-                <button disabled = {text.length ===0}className="btn btn-primary mx-1 my-1" onClick={handleExtraSpace}>Remove extra Space</button>
+                <button disabled = {text.length ===0}className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>Clear Text</button>
+                <button disabled = {text.length ===0}className="btn btn-primary mx-1 my-1" onClick={handleCopyClick}>Copy Text</button>
+                <button disabled = {text.length ===0}className="btn btn-primary mx-1 my-1" onClick={handleExtraSpace}>Remove Extra Space</button>
 
             </div>
             <div className="container my-3" style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>
@@ -60,7 +60,7 @@ export default function TextForm(props) {
                 <p>{text.split(" ").filter ((element) =>{return element.length !==0}).length} Word and {text.length} Charactor</p>
                 <p>{0.008 * text.split(" ").filter ((element) =>{return element.length !==0}).length} Minute to read</p>
                 <h2>Preview</h2>
-                <p>{text.length > 0 ? text : "nothing to preview"}</p>
+                <p>{text.length > 0 ? text : "Nothing to preview"}</p>
             </div>
         </>
     )
